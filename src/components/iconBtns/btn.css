@@ -1,0 +1,19 @@
+.nav-link {
+  border-bottom: 4xp;
+  border-color: transparent;
+}
+
+.nav-link:hover {
+  height: 56px;
+}
+
+.nav-link.active:hover {
+  background: transparent;
+  border-radius: 0;
+  height: 64px;
+}
+
+.nav-link.active {
+  border-color: rgb(93, 93, 231);
+  color: rgb(92, 92, 240);
+}
