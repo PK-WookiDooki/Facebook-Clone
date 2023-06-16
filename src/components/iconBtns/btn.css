@@ -1,5 +1,5 @@
 .nav-link {
-  border-bottom: 4xp;
+  border-bottom: 3xp;
   border-color: transparent;
 }
 
@@ -14,6 +14,6 @@
 }
 
 .nav-link.active {
-  border-color: rgb(93, 93, 231);
-  color: rgb(92, 92, 240);
+  border-color: #2563eb;
+  color: #2563eb;
 }

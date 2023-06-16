@@ -1,12 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import {
-  BsFacebook,
   BsSearch,
   BsPlusLg,
   BsMessenger,
   BsBellFill,
-  BsPersonCircle,
   BsArrowLeft,
 } from "react-icons/bs";
 import { CgMenuGridO } from "react-icons/cg";
@@ -14,6 +12,7 @@ import { HiUserGroup, HiHome } from "react-icons/hi";
 import { IoGameController } from "react-icons/io5";
 import { TfiMenu } from "react-icons/tfi";
 import { IBtn, ILink } from "..";
+import profile from "../../assets/images/profile.jpg";
 
 const Navbar = () => {
   const [focus, setFocus] = useState(false);
@@ -25,13 +24,14 @@ const Navbar = () => {
   };
 
   return (
-    <section className="bg-gray-800 shadow sticky top-0 border-b border-gray-600">
+    <section className="sticky top-0 bg-gray-800 shadow border-b border-gray-600 z-20">
       <div className="mx-auto ">
         <nav className=" h-16 flex items-center justify-between relative">
+          {/* logo an search box */}
           <div
             className={`border-b border-r  ${
               active
-                ? "absolute lg:relative bg-gray-900 bg-opacity-80 py-3 z-[5] h-40 rounded-br-md border-gray-700 mr-auto"
+                ? "absolute lg:relative bg-gray-900 py-3 z-10 h-40 rounded-br-md border-gray-700 mr-auto"
                 : "relative border-transparent"
             }  flex items-center gap-2  px-5 w-fit`}
           >
@@ -48,7 +48,10 @@ const Navbar = () => {
               </div>
             ) : (
               <Link to={"/"} className="w-10 h-10 rounded-full">
-                <BsFacebook className="w-full h-full text-blue-600 bg-white rounded-full" />
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1365px-Facebook_f_logo_%282019%29.svg.png"
+                  alt="Facebook Logo"
+                />
               </Link>
             )}
             <div
@@ -64,7 +67,7 @@ const Navbar = () => {
               } rounded-full lg:flex items-center justify-center bg-gray-700 px-3 overflow-hidden z-[5]`}
             >
               <div
-                lassName={`${active ? "hidden" : "block lg:hidden"}`}
+                className={`${active ? "hidden" : "block"}`}
                 onClick={handleFocus}
               >
                 <BsSearch
@@ -78,8 +81,11 @@ const Navbar = () => {
                 placeholder="Search Facebook"
                 className={` ${
                   focus ? "w-64" : "w-[216px] ms-2"
-                } bg-transparent h-full outline-none placeholder:text-sm caret-white duration-200 `}
-                onFocus={handleFocus}
+                } bg-transparent h-full outline-none placeholder:text-sm caret-white duration-200 text-gray-300`}
+                onFocus={() => {
+                  setActive(true);
+                  setFocus(true);
+                }}
               />
             </div>
 
@@ -92,6 +98,7 @@ const Navbar = () => {
             </p>
           </div>
 
+          {/* main icons link */}
           <div className="hidden md:flex items-center gap-3 mx-auto w-full justify-center">
             <ILink
               icon={<HiHome />}
@@ -121,6 +128,7 @@ const Navbar = () => {
             </div>
           </div>
 
+          {/* right side icons group */}
           <div className="ms-auto flex items-center gap-2 pr-5 w-full justify-end md:w-[30%]">
             <div className="hidden lg:block">
               <IBtn
@@ -152,7 +160,7 @@ const Navbar = () => {
               className="pointer-events-none"
             />
             <IBtn
-              icon={<BsPersonCircle />}
+              image={profile}
               hover={"hover"}
               tooltip={"Account"}
               className="pointer-events-none"

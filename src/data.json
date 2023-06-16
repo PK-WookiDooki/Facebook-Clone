@@ -1,0 +1,185 @@
+{
+  "friends": [
+    {
+      "id": 1,
+      "name": "Toni Kroos"
+    },
+    {
+      "id": 2,
+      "name": "Pyaesone Khant"
+    },
+    {
+      "id": 3,
+      "name": "Luca Modric"
+    },
+    {
+      "id": 4,
+      "name": "Federico Valverde"
+    },
+    {
+      "id": 5,
+      "name": "Rodrygo Goes"
+    },
+    {
+      "id": 6,
+      "name": "Cristiano Ronaldo"
+    },
+    {
+      "id": 7,
+      "name": "Lionel Messi"
+    },
+    {
+      "id": 8,
+      "name": "Sergio Ramos"
+    },
+    {
+      "id": 9,
+      "name": "Karim Benzemma"
+    },
+    {
+      "id": 10,
+      "name": "Vinicius Junior"
+    }
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "name": "Discussion Group"
+    },
+    {
+      "id": 2,
+      "name": "Team Devils"
+    },
+    {
+      "id": 3,
+      "name": "Futsal Chit Nyi Ko Myar"
+    },
+    {
+      "id": 4,
+      "name": "Learning Group"
+    }
+  ],
+  "stories": [
+    {
+      "id": 1,
+      "image": "https://images.unsplash.com/photo-1541336032412-2048a678540d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60z",
+      "user": "Timo Wegnar",
+      "profile": ""
+    },
+    {
+      "id": 2,
+      "image": "https://images.unsplash.com/photo-1564594387897-c2a7adfd2b1b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHI2fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
+      "user": "Rodrygo Goes",
+      "profile": ""
+    },
+    {
+      "id": 3,
+      "image": "https://images.unsplash.com/photo-1604344929197-c89e3ef3c25b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGJpa2V8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
+      "user": "Toni Kross",
+      "profile": ""
+    },
+    {
+      "id": 4,
+      "image": "https://images.unsplash.com/photo-1674888199997-a330dabcdd0d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHI2fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
+      "user": "Brayan",
+      "profile": ""
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "profile_image": "https://wirally.com/wp-content/uploads/2022/11/6-f.jpg",
+      "name": "Kylian Mbappe",
+      "postedTime": "28m",
+      "isFriend": true,
+      "desc": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit vero ducimus quod dolorum eligendi esse pariatur reprehenderit autem? Neque, incidunt?",
+      "postedImages": [
+        "https://cdn.britannica.com/39/239139-050-49A950D1/French-soccer-player-Kylian-Mbappe-FIFA-World-Cup-December-10-2022.jpg",
+        "https://talksport.com/wp-content/uploads/sites/5/2022/12/breton-francevp221204_npEyn-JS781075481.jpg?strip=all&quality=100&w=1080&h=1080&crop=1"
+      ],
+      "likes": "1.2M",
+      "comments": "23K",
+      "shares": "10K",
+      "mutual": ["Lionel Messi", "Cristiano Ronaldo", "Sergio Ramos", "Hakimi"],
+      "nationality": "French",
+      "team": "PSG",
+      "role": "Striker"
+    },
+    {
+      "id": 2,
+      "profile_image": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg",
+      "name": "Cristiano Ronaldo",
+      "postedTime": "56m",
+      "isFriend": false,
+      "desc": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit vero ducimus quod dolorum eligendi esse pariatur reprehenderit autem? Neque, incidunt? Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+      "postedImages": [
+        "https://www.planetsport.com/image-library/square/500/c/cristiano-ronaldo-portugal-5-june-2022.jpg",
+        "https://media.architecturaldigest.com/photos/638a5c36e101fedaad293dc2/16:9/w_2560%2Cc_limit/GettyImages-1443064180.jpg"
+      ],
+      "likes": "36M",
+      "comments": "53K",
+      "shares": "1.2M",
+      "mutual": ["Lionel Messi", "Sergio Ramos"],
+      "nationality": "Portugal",
+      "team": "Al Nassar",
+      "role": "Striker"
+    },
+    {
+      "id": 3,
+      "profile_image": "https://images.news18.com/ibnlive/uploads/2022/12/lionel-messi-16710055844x3.jpg",
+      "name": "Lionel Messi",
+      "postedTime": "2hr",
+      "isFriend": false,
+      "desc": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit vero ducimus quod dolorum eligendi esse pariatur reprehenderit autem? Neque, incidunt? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit vero ducimus quod dolorum eligendi esse pariatur reprehenderit autem? Neque, incidunt?",
+      "postedImages": [
+        "https://ca-times.brightspotcdn.com/dims4/default/f69eb78/2147483647/strip/true/crop/3677x2451+0+0/resize/1200x800!/quality/80/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F3a%2F50%2F6e59ff974bf5817aad2d1157c791%2Fap22352671432887.jpg",
+        "https://www.planetsport.com/image-library/square/1200/a/argentinas-lionel-messi-poses-with-the-fifa-world-cup-trophy.jpg"
+      ],
+      "likes": "42M",
+      "comments": "1M",
+      "shares": "2M",
+      "mutual": ["Sergio Ramos", "Cristiano Ronaldo"],
+      "nationality": "Argentina",
+      "team": "Inter Miami",
+      "role": "Striker"
+    },
+    {
+      "id": 4,
+      "profile_image": "https://numero.twic.pics/2022-11/karim-benzema-ballon-dor-real-madrid-coupe-du-monde-numero-magazine.jpg",
+      "name": "Karim Benzemma",
+      "postedTime": "5m",
+      "isFriend": true,
+      "desc": "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+      "postedImages": [
+        "https://media.cnn.com/api/v1/images/stellar/prod/220406215928-benzema.jpg?c=4x3",
+        "https://i.guim.co.uk/img/media/87d567aa2fb5072f8db4181ba46748275d6e161d/145_329_3124_1874/master/3124.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=61eb67ea166f9daedd7cdea9defe8614"
+      ],
+      "likes": "26M",
+      "comments": "3M",
+      "shares": "4.2M",
+      "mutual": ["Lionel Messi", "Cristiano Ronaldo"],
+      "nationality": "French",
+      "team": "Real Madrid",
+      "role": "Striker"
+    },
+    {
+      "id": 5,
+      "profile_image": "https://www.realmadrid.com/img/vertical_380px/ramos_ficha_550x650_20210630115027.jpg",
+      "name": "Sergio Ramos",
+      "postedTime": "45m",
+      "isFriend": false,
+      "desc": "Sit vero ducimus quod dolorum eligendi esse pariatur reprehenderit autem? Neque, incidunt?",
+      "postedImages": [
+        "https://media.cnn.com/api/v1/images/stellar/prod/210616212035-ramos-tease.jpg?q=w_2523,h_1682,x_0,y_0,c_fill",
+        "https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt4006aa4324d537f4/60da723d0401cb0ebfa64256/79f3ed1268bb523d98923c0fbb6f73ef46243bfe.jpg?auto=webp&format=pjpg&width=3840&quality=60"
+      ],
+      "likes": "26M",
+      "comments": "3M",
+      "shares": "4.2M",
+      "mutual": ["Karim Benzema", "Cristiano Ronaldo", "Lionel Messi"],
+      "nationality": "Spain",
+      "team": "Real Madrid",
+      "role": "Defender"
+    }
+  ]
+}
