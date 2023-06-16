@@ -10,9 +10,9 @@ const SponsorCard = ({ path, desc, image, link }) => {
       <img src={image} alt="" className="w-36 rounded" />
       <div className="">
         <p> {desc} </p>
-        <Link to={path} className="text-sm">
+        <span className="text-sm">
           {link}
-        </Link>
+        </span>
       </div>
     </Link>
   );

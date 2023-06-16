@@ -37,7 +37,7 @@ const HomeContent = () => {
       </div>
       {/* create post */}
       <div className="p-3 bg-slate-800 rounded-md mb-5 mx-2">
-        <div className="flex items-center gap-3 pb-3 border-b border-gray-600">
+        <div className="flex items-center gap-3 md:pb-3 md:border-b border-gray-600">
           <img
             src={profile}
             alt=""
@@ -45,10 +45,10 @@ const HomeContent = () => {
             onClick={() => alert("Hello")}
           />
           <button className=" h-10 w-full rounded-full bg-gray-600 bg-opacity-60 outline-none px-3 flex items-center hover:bg-opacity-100 duration-150 text-gray-400">
-            What is on your mind, Wooki Dooki?
+            What is on your mind?
           </button>
         </div>
-        <div className="mt-3 flex items-center justify-between">
+        <div className=" hidden mt-3 md:flex items-center justify-between">
           <PBtn
             icon={<BsFillCameraVideoFill className="text-2xl text-red-700" />}
             title={"Live Video"}

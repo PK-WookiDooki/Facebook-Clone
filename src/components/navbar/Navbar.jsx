@@ -11,12 +11,15 @@ import { CgMenuGridO } from "react-icons/cg";
 import { HiUserGroup, HiHome } from "react-icons/hi";
 import { IoGameController } from "react-icons/io5";
 import { TfiMenu } from "react-icons/tfi";
-import { IBtn, ILink } from "..";
+
+import { AMenu, IBtn, ILink } from "..";
 import profile from "../../assets/images/profile.jpg";
 
 const Navbar = () => {
   const [focus, setFocus] = useState(false);
   const [active, setActive] = useState(false);
+
+  const [menu, setMenu] = useState(false);
 
   const handleFocus = () => {
     setFocus(!focus);
@@ -159,12 +162,24 @@ const Navbar = () => {
               noti={15}
               className="pointer-events-none"
             />
-            <IBtn
-              image={profile}
-              hover={"hover"}
-              tooltip={"Account"}
-              className="pointer-events-none"
-            />
+            <div
+              onClick={() => setMenu(!menu)}
+              className=" bg-red-300 rounded-full relative"
+            >
+              <IBtn
+                image={profile}
+                hover={"hover"}
+                tooltip={"Account"}
+                className="pointer-events-none"
+              />
+              <div
+                className={` ${
+                  menu ? "block" : "hidden"
+                } absolute right-2 top-12 min-w-[380px] max-w-sm`}
+              >
+                <AMenu />
+              </div>
+            </div>
           </div>
         </nav>
       </div>

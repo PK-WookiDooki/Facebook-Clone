@@ -54,7 +54,9 @@ const PostFooter = ({ likes, comments, shares }) => {
           title={"Share"}
           lg={true}
         />
-        <PBtn image={profile} />
+        <div className="hidden md:block">
+          <PBtn image={profile} />
+        </div>
       </div>
     </section>
   );

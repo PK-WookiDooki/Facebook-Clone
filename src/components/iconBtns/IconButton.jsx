@@ -2,9 +2,6 @@ import React, { useState } from "react";
 
 const IconButton = ({ icon, hover, hidden, noti, tooltip, sm, image }) => {
   const [active, setActive] = useState(false);
-  // const handleTooltip = () => {
-  //   setActive(!active);
-  // };
 
   return (
     <button
@@ -35,7 +32,7 @@ const IconButton = ({ icon, hover, hidden, noti, tooltip, sm, image }) => {
         <p
           className={` ${active ? "block" : "hidden"} absolute ${
             sm ? "-bottom-10" : "-bottom-12"
-          }  right-0 px-3 py-[10px] bg-gray-300 bg-opacity-90 rounded-lg text-gray-700 text-xs min-w-max `}
+          }  right-0 px-3 py-[10px] bg-gray-300 bg-opacity-90 rounded-lg text-gray-700 text-xs min-w-max z-[5] `}
         >
           {" "}
           {tooltip}{" "}

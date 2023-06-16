@@ -27,3 +27,6 @@ export { default as HContent } from "./contents/HomeContent";
 export { default as PHeader } from "./post/PostHeader";
 export { default as PContent } from "./post/PostContent";
 export { default as PFooter } from "./post/PostFooter";
+
+// from menus
+export { default as AMenu } from "./menus/AccountMenu";
