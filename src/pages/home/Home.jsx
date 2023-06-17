@@ -3,7 +3,7 @@ import { HContent, HLSB, HRSB } from "../../components";
 
 const Home = () => {
   return (
-    <section className="flex justify-center lg:justify-between w-full gap-10 overflow-x-hidden  ">
+    <section className="flex justify-center lg:justify-between w-full min-h-screen ">
       <HLSB />
       <HContent />
       <HRSB />

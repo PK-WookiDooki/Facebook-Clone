@@ -13,9 +13,9 @@ import { posts } from "../../data.json";
 
 const HomeContent = () => {
   return (
-    <section className="text-gray-200 w-full max-w-2xl">
+    <section className="text-gray-200 w-full max-w-2xl  sm:overflow-x-hidden md:overflow-visible">
       {/* stories cards */}
-      <div className="flex items-center gap-2 lg:justify-center relative mb-5">
+      <div className="flex items-center gap-2 lg:justify-between lg:px-2 relative mb-5">
         <StoryCard image={profile} me={true} />
         {stories?.map((story) => {
           return (
@@ -27,7 +27,7 @@ const HomeContent = () => {
             />
           );
         })}
-        <div className="absolute transform top-1/2 right-5 md:right-3 translate-x-1/2 -translate-y-1/2">
+        <div className="absolute transform top-1/2 right-5 md:right-2 translate-x-1/2 -translate-y-1/2">
           <IBtn
             icon={<BsArrowRight className="text-xl text-gray-300" />}
             hover={"hover"}
@@ -71,6 +71,7 @@ const HomeContent = () => {
           title={"Feeling/Activity"}
           border={true}
           color={"blue"}
+          rounded={true}
         />
       </div>
 

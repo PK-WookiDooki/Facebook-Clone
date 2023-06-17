@@ -15,7 +15,7 @@ import profile from "../../assets/images/profile.jpg";
 
 const HomeLeftSidebar = () => {
   return (
-    <section className="sticky top-20 text-gray-200 lg:flex flex-col gap-1 hidden w-full max-w-xs ">
+    <section className=" sticky top-20 max-h-[85vh] text-gray-200 lg:flex flex-col gap-1 hidden w-full max-w-xs ">
       <div className="text-white flex flex-col gap-1 border-b pb-2 border-gray-600">
         <SBI image={profile} title={"Wooki Dooki"} path={"/account"} />
         <SBI

@@ -1,13 +1,11 @@
 import React from "react";
 
-const Title = ({ title, post }) => {
+const Title = ({ title, post, menu }) => {
   return (
     <h2
       className={` ${
-        post
-          ? "text-gray-200 hover:underline duration-100 cursor-pointer"
-          : "text-gray-400"
-      } capitalize font-semibold`}
+        post ? "text-gray-200 hover:underline duration-100 cursor-pointer" : ""
+      } capitalize font-semibold ${menu ? "text-gray-200" : "text-gray-400"}`}
     >
       {" "}
       {title}

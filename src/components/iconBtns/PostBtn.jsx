@@ -1,13 +1,25 @@
 import React from "react";
 
-const PostBtn = ({ icon, title, border, color, lg, bg, image }) => {
+const PostBtn = ({
+  icon,
+  title,
+  border,
+  color,
+  lg,
+  bg,
+  image,
+  rounded,
+  fw,
+}) => {
   return (
     <button
-      className={` ${border ? " border rounded-full" : "rounded-md"} ${
+      className={` ${border ? " border" : ""} ${
+        rounded ? "rounded-full" : "rounded-md"
+      } ${
         color === "blue"
-          ? " border-blue-500 text-blue-500 hover:bg-opacity-50"
-          : ""
-      } flex items-center justify-center gap-2 text-gray-300  h-10  hover:bg-gray-600 ${
+          ? " border-blue-500 text-blue-500 hover:bg-opacity-50 "
+          : "text-gray-300"
+      } flex items-center justify-center gap-2 h-10  hover:bg-gray-600 ${
         lg
           ? "text-base md:min-w-[150px] md:max-w-[150px] w-fit px-2 md:px-0"
           : "text-sm"
@@ -17,7 +29,7 @@ const PostBtn = ({ icon, title, border, color, lg, bg, image }) => {
           : bg === "gray"
           ? "bg-gray-700"
           : ""
-      } font-semibold duration-100`}
+      } ${fw === "light" ? " font-light" : "font-semibold"} duration-100`}
     >
       {icon ? (
         icon

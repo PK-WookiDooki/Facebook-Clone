@@ -5,6 +5,7 @@ export { default as IBtn } from "./iconBtns/IconButton";
 export { default as ILink } from "./iconBtns/IconLink";
 export { default as SBI } from "./iconBtns/SideBarIcon";
 export { default as PBtn } from "./iconBtns/PostBtn";
+export { default as NBtn } from "./iconBtns/NotiBtn";
 
 //from left-sidebars
 export { default as HLSB } from "./left-sidebars/HomeLeftSidebar";
@@ -30,3 +31,4 @@ export { default as PFooter } from "./post/PostFooter";
 
 // from menus
 export { default as AMenu } from "./menus/AccountMenu";
+export { default as NMenu } from "./menus/NotiMenu";

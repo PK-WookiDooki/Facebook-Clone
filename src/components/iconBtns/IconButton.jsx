@@ -1,6 +1,15 @@
 import React, { useState } from "react";
 
-const IconButton = ({ icon, hover, hidden, noti, tooltip, sm, image }) => {
+const IconButton = ({
+  icon,
+  hover,
+  hidden,
+  noti,
+  tooltip,
+  sm,
+  image,
+  border,
+}) => {
   const [active, setActive] = useState(false);
 
   return (
@@ -9,7 +18,9 @@ const IconButton = ({ icon, hover, hidden, noti, tooltip, sm, image }) => {
       onMouseLeave={() => setActive(false)}
       className={`text-lg ${
         sm ? " w-8 h-8 " : "w-10 h-10 bg-gray-700 bg-opacity-90 text-white "
-      } rounded-full  flex items-center justify-center  ${
+      } rounded-full  flex items-center justify-center ${
+        border ? "border border-gray-800 shadow-lg" : ""
+      }  ${
         hover === "hover" ? "hover:bg-gray-600 bg-opacity-900" : ""
       } duration-100 ${hidden ? "lg:hidden" : ""} relative`}
     >

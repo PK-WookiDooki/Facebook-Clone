@@ -16,7 +16,7 @@ import { friends, groups } from "../../data.json";
 
 const HomeRightSidebar = () => {
   return (
-    <section className=" sticky top-20 w-full max-w-sm text-gray-300 hidden lg:block">
+    <section className=" sticky top-20 overflow-y-scroll max-h-[88vh] w-full max-w-sm text-gray-300 hidden lg:block">
       {/* Sponsors */}
       <div className="flex flex-col gap-2 pb-2 border-b border-gray-600 mb-2">
         <Title title={"Sponsored"} />

@@ -147,7 +147,7 @@
       "id": 4,
       "profile_image": "https://numero.twic.pics/2022-11/karim-benzema-ballon-dor-real-madrid-coupe-du-monde-numero-magazine.jpg",
       "name": "Karim Benzemma",
-      "postedTime": "5m",
+      "postedTime": "5hr",
       "isFriend": true,
       "desc": "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
       "postedImages": [
@@ -166,7 +166,7 @@
       "id": 5,
       "profile_image": "https://www.realmadrid.com/img/vertical_380px/ramos_ficha_550x650_20210630115027.jpg",
       "name": "Sergio Ramos",
-      "postedTime": "45m",
+      "postedTime": "1day",
       "isFriend": false,
       "desc": "Sit vero ducimus quod dolorum eligendi esse pariatur reprehenderit autem? Neque, incidunt?",
       "postedImages": [
@@ -180,6 +180,81 @@
       "nationality": "Spain",
       "team": "Real Madrid",
       "role": "Defender"
+    }
+  ],
+  "notis": [
+    {
+      "id": 1,
+      "image": "https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt16935d228ba1e436/6456e7bb81046f1340e35e0e/fotor_2023-5-7_1_49_39.jpg?auto=webp&format=pjpg&width=3840&quality=60",
+      "desc": "Lorem, ipsum dolor sit amet consectetur adipisicing elit... ",
+      "isNew": true,
+      "type": "video",
+      "timeAgo": "45 minutes"
+    },
+    {
+      "id": 2,
+      "image": "https://www.realmadrid.com/img/vertical_380px/ramos_ficha_550x650_20210630115027.jpg",
+      "name": "Sergio Ramos",
+      "desc": "Lorem, ipsum dolor sit amet consectetur adipisicing elit... ",
+      "isNew": false,
+      "type": "video",
+      "timeAgo": "1 hours"
+    },
+    {
+      "id": 3,
+      "image": "https://images.news18.com/ibnlive/uploads/2022/12/lionel-messi-16710055844x3.jpg",
+      "desc": "Lorem, ipsum dolor sit amet consectetur adipisicing elit... ",
+      "isNew": true,
+      "type": "video",
+      "timeAgo": "3 hours"
+    },
+    {
+      "id": 4,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg",
+      "desc": "Lorem, ipsum dolor sit amet consectetur adipisicing elit... ",
+      "isNew": true,
+      "type": "video",
+      "timeAgo": "5 hours"
+    },
+    {
+      "id": 5,
+      "image": "https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt16935d228ba1e436/6456e7bb81046f1340e35e0e/fotor_2023-5-7_1_49_39.jpg?auto=webp&format=pjpg&width=3840&quality=60",
+      "desc": "Lorem, ipsum dolor sit amet consectetur adipisicing elit... ",
+      "isNew": false,
+      "type": "video",
+      "timeAgo": "6 hours"
+    },
+    {
+      "id": 6,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg",
+      "desc": "Lorem, ipsum dolor sit amet consectetur adipisicing elit... ",
+      "isNew": true,
+      "type": "video",
+      "timeAgo": "a day"
+    },
+    {
+      "id": 7,
+      "image": "https://numero.twic.pics/2022-11/karim-benzema-ballon-dor-real-madrid-coupe-du-monde-numero-magazine.jpg",
+      "desc": "Lorem, ipsum dolor sit amet consectetur adipisicing elit... ",
+      "isNew": false,
+      "type": "video",
+      "timeAgo": "2 days"
+    },
+    {
+      "id": 8,
+      "image": "https://wirally.com/wp-content/uploads/2022/11/6-f.jpg",
+      "desc": "Lorem, ipsum dolor sit amet consectetur adipisicing elit... ",
+      "isNew": false,
+      "type": "video",
+      "timeAgo": "2 days"
+    },
+    {
+      "id": 9,
+      "image": "https://images.news18.com/ibnlive/uploads/2022/12/lionel-messi-16710055844x3.jpg",
+      "desc": "Lorem, ipsum dolor sit amet consectetur adipisicing elit... ",
+      "isNew": false,
+      "type": "video",
+      "timeAgo": "5 days"
     }
   ]
 }

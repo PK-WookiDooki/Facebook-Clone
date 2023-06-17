@@ -12,18 +12,29 @@ import { HiUserGroup, HiHome } from "react-icons/hi";
 import { IoGameController } from "react-icons/io5";
 import { TfiMenu } from "react-icons/tfi";
 
-import { AMenu, IBtn, ILink } from "..";
+import { AMenu, IBtn, ILink, NMenu } from "..";
 import profile from "../../assets/images/profile.jpg";
 
 const Navbar = () => {
   const [focus, setFocus] = useState(false);
   const [active, setActive] = useState(false);
 
-  const [menu, setMenu] = useState(false);
+  const [accMenu, setAccMenu] = useState(false);
+  const [notiMenu, setNotiMenu] = useState(false);
 
   const handleFocus = () => {
     setFocus(!focus);
     setActive(!active);
+  };
+
+  const handleAccMenu = () => {
+    setAccMenu(!accMenu);
+    setNotiMenu(false);
+  };
+
+  const handleNotiMenu = () => {
+    setNotiMenu(!notiMenu);
+    setAccMenu(false);
   };
 
   return (
@@ -83,8 +94,8 @@ const Navbar = () => {
                 type="text"
                 placeholder="Search Facebook"
                 className={` ${
-                  focus ? "w-64" : "w-[216px] ms-2"
-                } bg-transparent h-full outline-none placeholder:text-sm caret-white duration-200 text-gray-300`}
+                  focus ? "w-64 px-1" : "w-[216px] ms-2"
+                } bg-transparent h-full outline-none placeholder:text-sm caret-white duration-200 text-gray-300 `}
                 onFocus={() => {
                   setActive(true);
                   setFocus(true);
@@ -155,27 +166,39 @@ const Navbar = () => {
               noti={9}
               className="pointer-events-none"
             />
-            <IBtn
-              icon={<BsBellFill />}
-              hover={"hover"}
-              tooltip={"Notifications"}
-              noti={15}
-              className="pointer-events-none"
-            />
-            <div
-              onClick={() => setMenu(!menu)}
-              className=" bg-red-300 rounded-full relative"
-            >
-              <IBtn
-                image={profile}
-                hover={"hover"}
-                tooltip={"Account"}
-                className="pointer-events-none"
-              />
+
+            <div className=" bg-red-300 rounded-full relative">
+              <div onClick={handleNotiMenu} className="">
+                <IBtn
+                  icon={<BsBellFill />}
+                  hover={"hover"}
+                  tooltip={"Notifications"}
+                  noti={15}
+                  className="pointer-events-none"
+                />
+              </div>
               <div
                 className={` ${
-                  menu ? "block" : "hidden"
-                } absolute right-2 top-12 min-w-[380px] max-w-sm`}
+                  notiMenu ? "block" : "hidden"
+                } fixed z-[2] right-3 top-14 min-w-[350px] max-w-[350px] `}
+              >
+                <NMenu />
+              </div>
+            </div>
+
+            <div className=" bg-red-300 rounded-full relative">
+              <div onClick={handleAccMenu} className="">
+                <IBtn
+                  image={profile}
+                  hover={"hover"}
+                  tooltip={"Account"}
+                  className="pointer-events-none"
+                />
+              </div>
+              <div
+                className={` ${
+                  accMenu ? "block" : "hidden"
+                } fixed right-3 top-14 min-w-[350px] max-w-[350px]`}
               >
                 <AMenu />
               </div>
