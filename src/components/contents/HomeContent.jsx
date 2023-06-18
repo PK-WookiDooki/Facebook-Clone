@@ -15,7 +15,7 @@ const HomeContent = () => {
   return (
     <section className="text-gray-200 w-full max-w-2xl  sm:overflow-x-hidden md:overflow-visible">
       {/* stories cards */}
-      <div className="flex items-center gap-2 lg:justify-between lg:px-2 relative mb-5">
+      <div className="flex items-center gap-2 lg:justify-between lg:px-2 relative mb-5 overflow-x-hidden md:overflow-visible">
         <StoryCard image={profile} me={true} />
         {stories?.map((story) => {
           return (
