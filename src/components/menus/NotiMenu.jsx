@@ -5,7 +5,7 @@ import { notis } from "../../data.json";
 
 const NotiMenu = () => {
   return (
-    <section className="p-3 border border-gray-600 rounded-md bg-slate-900 text-gray-300 tracking-wide max-h-[90vh] overflow-y-scroll ">
+    <section className="p-2 border border-gray-600 rounded-md bg-slate-800 text-gray-300 tracking-wide max-h-[90vh] overflow-y-scroll ">
       {/* noti header */}
       <div className=" flex flex-col gap-1">
         <div className="flex items-center justify-between">

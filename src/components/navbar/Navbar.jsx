@@ -12,7 +12,7 @@ import { HiUserGroup, HiHome } from "react-icons/hi";
 import { IoGameController } from "react-icons/io5";
 import { TfiMenu } from "react-icons/tfi";
 
-import { AMenu, IBtn, ILink, NMenu } from "..";
+import { AMenu, CMenu, IBtn, ILink, LMenu, NMenu } from "..";
 import profile from "../../assets/images/profile.jpg";
 
 const Navbar = () => {
@@ -21,6 +21,8 @@ const Navbar = () => {
 
   const [accMenu, setAccMenu] = useState(false);
   const [notiMenu, setNotiMenu] = useState(false);
+  const [createMenu, setCreateMenu] = useState(false);
+  const [largeMenu, setLargeMenu] = useState(false);
 
   const handleFocus = () => {
     setFocus(!focus);
@@ -30,11 +32,29 @@ const Navbar = () => {
   const handleAccMenu = () => {
     setAccMenu(!accMenu);
     setNotiMenu(false);
+    setCreateMenu(false);
+    setLargeMenu(false);
   };
 
   const handleNotiMenu = () => {
     setNotiMenu(!notiMenu);
     setAccMenu(false);
+    setCreateMenu(false);
+    setLargeMenu(false);
+  };
+
+  const handleCreateMenu = () => {
+    setCreateMenu(!createMenu);
+    setAccMenu(false);
+    setNotiMenu(false);
+    setLargeMenu(false);
+  };
+
+  const handleLargeMenu = () => {
+    setLargeMenu(!largeMenu);
+    setAccMenu(false);
+    setNotiMenu(false);
+    setCreateMenu(false);
   };
 
   return (
@@ -144,21 +164,48 @@ const Navbar = () => {
 
           {/* right side icons group */}
           <div className="ms-auto flex items-center gap-2 pr-5 w-full justify-end md:w-[30%]">
-            <div className="hidden lg:block">
-              <IBtn
-                icon={<CgMenuGridO className="text-3xl" />}
-                hover={"hover"}
-                tooltip={"Menu"}
-                className="pointer-events-none"
-              />
+            {/* large menu */}
+            <div className=" rounded-full relative -me-2">
+              <div
+                onClick={handleLargeMenu}
+                className="hidden lg:block rounded-full"
+              >
+                <IBtn
+                  icon={<CgMenuGridO className="text-3xl" />}
+                  hover={"hover"}
+                  tooltip={"Menu"}
+                  className="pointer-events-none"
+                />
+              </div>
+              <div
+                className={` ${
+                  largeMenu ? "md:block hidden" : "hidden"
+                } fixed right-3 top-14 min-w-[500px] max-w-[500px]`}
+              >
+                <LMenu />
+              </div>
             </div>
-            <IBtn
-              icon={<BsPlusLg className="text-2xl" />}
-              hover={"hover"}
-              hidden={true}
-              tooltip={"Create"}
-              className="pointer-events-none"
-            />
+
+            {/* create icon */}
+            <div className=" rounded-full relative">
+              <div onClick={handleCreateMenu} className="">
+                <IBtn
+                  icon={<BsPlusLg className="text-2xl" />}
+                  hover={"hover"}
+                  hidden={true}
+                  tooltip={"Create"}
+                  className="pointer-events-none"
+                />
+              </div>
+              <div
+                className={` ${
+                  createMenu ? "block lg:hidden" : "hidden"
+                } fixed right-3 top-14 min-w-[350px] max-w-[350px]`}
+              >
+                <CMenu />
+              </div>
+            </div>
+
             <IBtn
               icon={<BsMessenger />}
               hover={"hover"}
@@ -167,7 +214,8 @@ const Navbar = () => {
               className="pointer-events-none"
             />
 
-            <div className=" bg-red-300 rounded-full relative">
+            {/* notification icon */}
+            <div className=" rounded-full relative">
               <div onClick={handleNotiMenu} className="">
                 <IBtn
                   icon={<BsBellFill />}
@@ -186,7 +234,8 @@ const Navbar = () => {
               </div>
             </div>
 
-            <div className=" bg-red-300 rounded-full relative">
+            {/* profile */}
+            <div className=" rounded-full relative">
               <div onClick={handleAccMenu} className="">
                 <IBtn
                   image={profile}

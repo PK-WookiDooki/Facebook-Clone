@@ -32,3 +32,5 @@ export { default as PFooter } from "./post/PostFooter";
 // from menus
 export { default as AMenu } from "./menus/AccountMenu";
 export { default as NMenu } from "./menus/NotiMenu";
+export { default as CMenu } from "./menus/CreateMenu";
+export { default as LMenu } from "./menus/LargeMenu";

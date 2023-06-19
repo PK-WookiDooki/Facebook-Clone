@@ -11,7 +11,7 @@ import profile from "../../assets/images/profile.jpg";
 
 const AccountMenu = () => {
   return (
-    <section className="p-3 border border-gray-600 rounded-md bg-slate-900 text-gray-300 tracking-wide">
+    <section className="p-2 border border-gray-600 rounded-md bg-slate-800 text-gray-300 tracking-wide">
       <h2 className="text-gray-400 text-center mb-2">Account Menu</h2>
 
       {/* account */}

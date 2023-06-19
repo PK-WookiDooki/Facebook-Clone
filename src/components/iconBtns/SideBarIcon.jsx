@@ -10,13 +10,15 @@ const SideBarIcon = ({
   status,
   image,
   noti,
+  desc,
+  notCenter,
 }) => {
   return (
     <Link
       to={path}
-      className={` ${tsm ? "text-sm h-10" : "h-14"} ${
+      className={`py-2 ${tsm ? "text-sm " : ""} ${
         color === "blue" ? "text-blue-500" : ""
-      } flex items-center ${
+      } flex ${notCenter ? "items-start" : "items-center"} ${
         icon || image ? "gap-3" : ""
       } px-2 rounded-md hover:bg-gray-700 hover:bg-opacity-80 max-w-sm w-full`}
     >
@@ -43,6 +45,10 @@ const SideBarIcon = ({
             {" "}
             2{" "}
           </p>{" "}
+        </div>
+      ) : desc ? (
+        <div className="flex flex-col">
+          {title} <p className="text-xs font-light text-gray-400"> {desc} </p>
         </div>
       ) : (
         <div className="">{title}</div>

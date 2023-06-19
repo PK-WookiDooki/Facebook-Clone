@@ -73,9 +73,9 @@ const PostHeader = ({
         <div
           onMouseEnter={() => setTooltip(true)}
           onMouseLeave={() => setTooltip(false)}
-          className={` ${tooltip ? "block" : "hidden "} absolute  ${
+          className={` ${tooltip ? " block " : " hidden "} absolute  ${
             isLow ? " bottom-10 " : " top-10 "
-          }  p-3 bg-slate-800 rounded-md border border-gray-600 min-w-[400px] max-w-[400px] flex flex-col gap-3 duration-500 ease-linear `}
+          }  p-3 bg-slate-800 -left-2 z-[5] rounded-md border border-gray-600 min-w-[350px] max-w-[350px] md:min-w-[400px]  flex flex-col gap-3 duration-500 ease-linear `}
         >
           <div className="flex gap-3 items-start">
             <div className=" w-20 h-16 overflow-hidden rounded-full">

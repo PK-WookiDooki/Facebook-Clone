@@ -19,32 +19,36 @@ const HomeLeftSidebar = () => {
       <div className="text-white flex flex-col gap-1 border-b pb-2 border-gray-600">
         <SBI image={profile} title={"Wooki Dooki"} path={"/account"} />
         <SBI
-          icon={<BsPeopleFill className="text-3xl w-10" />}
+          icon={<BsPeopleFill className="text-3xl w-10 text-blue-600" />}
           title={"Friends"}
           path={"/account"}
         />
         <SBI
-          icon={<BsClockFill className="text-3xl w-10" />}
+          icon={<BsClockFill className="text-3xl w-10 text-sky-500" />}
           title={"Most Recent"}
           path={"/recent_posts"}
         />
         <SBI
-          icon={<BsYoutube className="text-3xl w-10" />}
+          icon={<BsYoutube className="text-3xl w-10 text-sky-500" />}
           title={"Watch"}
           path={"/watch"}
         />
         <SBI
-          icon={<RxCounterClockwiseClock className="text-3xl w-10" />}
+          icon={
+            <RxCounterClockwiseClock className="text-3xl w-10 text-sky-500" />
+          }
           title={"Memories"}
           path={"/account"}
         />
         <SBI
-          icon={<BsFillBookmarkCheckFill className="text-3xl w-10" />}
+          icon={
+            <BsFillBookmarkCheckFill className="text-3xl w-10 text-purple-400" />
+          }
           title={"Saved"}
           path={"/account"}
         />
         <SBI
-          icon={<BsFlagFill className="text-3xl w-10" />}
+          icon={<BsFlagFill className="text-3xl w-10 text-amber-700" />}
           title={"Pages"}
           path={"/pages"}
         />
