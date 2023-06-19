@@ -13,11 +13,12 @@ import {
   BsMessenger,
   BsFillBookmarkCheckFill,
 } from "react-icons/bs";
+import { HiUserGroup } from "react-icons/hi";
 import { GiSwipeCard, GiBonsaiTree } from "react-icons/gi";
 import { SiFacebookgaming } from "react-icons/si";
 import { IoCreateOutline } from "react-icons/io5";
 import { IoLogoGameControllerA } from "react-icons/io";
-import { MdMovieFilter, MdGroups, MdCrisisAlert } from "react-icons/md";
+import { MdMovieFilter, MdCrisisAlert } from "react-icons/md";
 import { RxCounterClockwiseClock } from "react-icons/rx";
 import { ImStatsBars } from "react-icons/im";
 import { FaVideo, FaImages, FaBullhorn, FaNewspaper } from "react-icons/fa";
@@ -68,7 +69,7 @@ const LargeMenu = () => {
                 />
                 <SBI
                   icon={
-                    <MdGroups className="text-3xl bg-blue-500 rounded-full" />
+                    <HiUserGroup className="text-3xl bg-blue-600 rounded-full" />
                   }
                   title={"Group"}
                   desc={"Connect with people who share your interests."}
@@ -248,7 +249,7 @@ const LargeMenu = () => {
           <div className="mt-2 flex flex-col gap-1">
             <SBI icon={<BsFlagFill className="text-2xl" />} title={"Page"} />
             <SBI icon={<FaBullhorn className="text-2xl" />} title={"Ad"} />
-            <SBI icon={<BsPeopleFill className="text-2xl" />} title={"Group"} />
+            <SBI icon={<HiUserGroup className="text-2xl" />} title={"Group"} />
             <SBI
               icon={<BsCalendar2EventFill className="text-2xl" />}
               title={"Event"}

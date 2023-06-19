@@ -14,7 +14,8 @@ export { default as HLSB } from "./left-sidebars/HomeLeftSidebar";
 export { default as HRSB } from "./right-sidebars/HomeRightSidebar";
 
 // from titles
-export { default as Title } from "./titles/Title";
+export { default as Title } from "./miniComponents/Title";
+export { default as Modal } from "./miniComponents/Modal";
 
 // from cards
 export { default as SCard } from "./cards/SponsorCard";

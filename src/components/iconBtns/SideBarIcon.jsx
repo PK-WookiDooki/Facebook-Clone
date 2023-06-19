@@ -16,7 +16,7 @@ const SideBarIcon = ({
   return (
     <Link
       to={path}
-      className={`py-2 ${tsm ? "text-sm " : ""} ${
+      className={` ${desc ? "py-2" : "py-3"} ${tsm ? "text-sm " : ""} ${
         color === "blue" ? "text-blue-500" : ""
       } flex ${notCenter ? "items-start" : "items-center"} ${
         icon || image ? "gap-3" : ""

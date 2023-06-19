@@ -6,12 +6,11 @@ import {
   BsBellFill,
   BsThreeDots,
   BsPersonCircle,
-  BsPeopleFill,
   BsFillPlusCircleFill,
 } from "react-icons/bs";
 import { AiOutlineUserSwitch } from "react-icons/ai";
+import { HiUserGroup } from "react-icons/hi";
 import { FaBullhorn, FaVideo, FaSearch } from "react-icons/fa";
-import { BiFootball } from "react-icons/bi";
 import { friends, groups } from "../../data.json";
 
 const HomeRightSidebar = () => {
@@ -128,7 +127,7 @@ const HomeRightSidebar = () => {
             return (
               <SBI
                 key={friend.id}
-                icon={<BsPeopleFill className="text-3xl w-8" />}
+                icon={<HiUserGroup className="text-3xl w-8" />}
                 title={friend.name}
                 path={"/friend/messenger"}
               />

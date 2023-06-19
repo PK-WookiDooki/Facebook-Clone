@@ -4,8 +4,8 @@ import {
   BsFlagFill,
   BsBookFill,
   BsCalendar2EventFill,
-  BsPeopleFill,
 } from "react-icons/bs";
+import { HiUserGroup } from "react-icons/hi2";
 import { IoCreateOutline } from "react-icons/io5";
 import { MdMovieFilter } from "react-icons/md";
 import { FaVideo, FaBullhorn } from "react-icons/fa";
@@ -54,7 +54,7 @@ const CreateMenu = () => {
           desc={"Advertise your business brand or organization."}
         />
         <SBI
-          icon={<BsPeopleFill className="text-2xl" />}
+          icon={<HiUserGroup className="text-2xl" />}
           title={"Group"}
           desc={"Connect with people who share your interests."}
         />

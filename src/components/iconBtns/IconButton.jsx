@@ -9,11 +9,14 @@ const IconButton = ({
   sm,
   image,
   border,
+  toggle,
+  top,
 }) => {
   const [active, setActive] = useState(false);
 
   return (
     <button
+      onClick={toggle}
       onMouseEnter={() => setActive(true)}
       onMouseLeave={() => setActive(false)}
       className={`text-lg ${
@@ -22,7 +25,7 @@ const IconButton = ({
         border ? "border border-gray-800 shadow-lg" : ""
       }  ${
         hover === "hover" ? "hover:bg-gray-600 bg-opacity-900" : ""
-      } duration-100 ${hidden ? "lg:hidden" : ""} relative`}
+      } duration-100 ${hidden ? "lg:hidden" : ""} relative z-[5]`}
     >
       {icon ? (
         icon
@@ -42,8 +45,8 @@ const IconButton = ({
       {tooltip ? (
         <p
           className={` ${active ? "block" : "hidden"} absolute ${
-            sm ? "-bottom-10" : "-bottom-12"
-          }  right-0 px-3 py-[10px] bg-gray-300 bg-opacity-90 rounded-lg text-gray-700 text-xs min-w-max z-[5] `}
+           top ? " -top-10 " : "-bottom-10"
+          } right-0 px-3 py-[10px] bg-gray-300 bg-opacity-90 rounded-lg text-gray-700 text-xs min-w-max z-[5] `}
         >
           {" "}
           {tooltip}{" "}

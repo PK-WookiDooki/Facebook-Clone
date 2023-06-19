@@ -1,5 +1,5 @@
 import React from "react";
-import { IBtn, PBtn, PCard, StoryCard } from "..";
+import { IBtn, Modal, PBtn, PCard, StoryCard } from "..";
 import profile from "../../assets/images/profile.jpg";
 import { stories } from "../../data.json";
 import {
@@ -42,11 +42,11 @@ const HomeContent = () => {
             src={profile}
             alt=""
             className="w-10 h-10 rounded-full cursor-pointer"
-            onClick={() => alert("Hello")}
           />
-          <button className=" h-10 w-full rounded-full bg-gray-600 bg-opacity-60 outline-none px-3 flex items-center hover:bg-opacity-100 duration-150 text-gray-400">
+          <Modal />
+          {/* <button className=" h-10 w-full rounded-full bg-gray-600 bg-opacity-60 outline-none px-3 flex items-center hover:bg-opacity-100 duration-150 text-gray-400">
             What is on your mind?
-          </button>
+          </button> */}
         </div>
         <div className=" hidden mt-3 md:flex items-center justify-between">
           <PBtn
