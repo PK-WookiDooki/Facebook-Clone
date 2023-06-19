@@ -1,15 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { RxCross1 } from "react-icons/rx";
-import {
-  BsEmojiSmile,
-  BsImages,
-  BsEmojiLaughing,
-} from "react-icons/bs";
+import { BsEmojiSmile, BsImages, BsEmojiLaughing } from "react-icons/bs";
 import { FaUserTag } from "react-icons/fa";
 import { IoLocationSharp } from "react-icons/io5";
 import { AiFillFlag } from "react-icons/ai";
 import { HiOutlineGif } from "react-icons/hi2";
-import { IBtn} from "..";
+import { IBtn } from "..";
 import profile from "../../assets/images/profile.jpg";
 
 const Modal = () => {
@@ -32,7 +28,7 @@ const Modal = () => {
   const handleSubmit = () => {
     setModal(!modal);
     setText("");
-    alert("Thanks a lot for view my work!");
+    alert("Thanks a lot for viewing my work!");
   };
 
   return (
